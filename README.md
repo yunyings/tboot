@@ -1,7 +1,7 @@
 # tboot
 Trusted Boot (tboot) is an open source, pre- kernel/VMM module that uses Intel(R) Trusted Execution Technology (Intel(R) TXT) to perform a measured and verified launch of an OS kernel/VMM. 
 
-Upstream: http://sourceforge.net/projects/tboot/
+Upstream: http://sourceforge.net/projects/tboot
 Source code mercurial repo: http://hg.code.sf.net/p/tboot/code
 
 To use tboot on Intel TXT supported platforms, you need to:
@@ -34,7 +34,7 @@ Normally for legacy mode, updating grub is simple:
 Updating grub is more complicated under EFI mode. Below are examples of updating EFI grub for RHEL/Fedora/Ubuntu/SUSE.
 
 For Ubuntu: 
-# grub2-mkconfig -o /boot/grub2/grub.cfg 
+# grub2-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg 
 
 For RHEL:
 # yum install grub2-efi-x64-modules
