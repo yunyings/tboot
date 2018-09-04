@@ -33,9 +33,9 @@ Way of updating grub is different depending on OS and its boot mode(legacy or EF
 
 * Under EFI mode, updating grub is more complicated. 
 Below are examples of updating EFI grub for RHEL/Fedora/Ubuntu/SUSE.    
-
+    
     For Ubuntu:     
-    # grub2-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg    
+    "# grub2-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg"    
   
     For RHEL:      
     "# yum install grub2-efi-x64-modules"  
