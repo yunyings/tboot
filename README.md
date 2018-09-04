@@ -37,42 +37,42 @@ For Ubuntu:
 "# grub2-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg"
 
 For RHEL:    
-"# yum install grub2-efi-x64-modules"
-download file create-grub-efi-RHEL.sh from here, then:
-"# chmod 777 create-grub-efi-RHEL.sh"
-"# ./create-grub-efi-RHEL.sh"
-"# mv /boot/efi/EFI/redhat/grubx64.efi /boot/efi/EFI/redhat/grubx64.efi.bk"
-"# cp grubx64.efi.new /boot/efi/EFI/redhat/grubx64.efi"
+"# yum install grub2-efi-x64-modules"    
+download file create-grub-efi-RHEL.sh from here, then:    
+"# chmod 777 create-grub-efi-RHEL.sh"    
+"# ./create-grub-efi-RHEL.sh"    
+"# mv /boot/efi/EFI/redhat/grubx64.efi /boot/efi/EFI/redhat/grubx64.efi.bk"    
+"# cp grubx64.efi.new /boot/efi/EFI/redhat/grubx64.efi"    
 
 For Fedora:
-"# dnf install grub2-efi-x64-modules"
-download file create-grub-efi-Fedora.sh from here, then:
-"# chmod 777 create-grub-efi-Fedora.sh"
-"# ./create-grub-efi-Fedora.sh"
-"# mv /boot/efi/EFI/fedora/grubx64.efi /boot/efi/EFI/fedora/grubx64.efi.bk"
-"# cp grubx64.efi.new /boot/efi/EFI/fedora/grubx64.efi"
+"# dnf install grub2-efi-x64-modules"    
+download file create-grub-efi-Fedora.sh from here, then:    
+"# chmod 777 create-grub-efi-Fedora.sh"    
+"# ./create-grub-efi-Fedora.sh"    
+"# mv /boot/efi/EFI/fedora/grubx64.efi /boot/efi/EFI/fedora/grubx64.efi.bk"    
+"# cp grubx64.efi.new /boot/efi/EFI/fedora/grubx64.efi"    
 
-For SUSE(SUSE Linux Enterprise Server, SLES):
-"# zypper install grub2-efi-x64-modules"
-download file create-grub-efi-SLES.sh from here, then:
-"# chmod 777 create-grub-efi-SLES.sh"
-"# ./create-grub-efi-SLES.sh"
-"# mv /boot/efi/EFI/sles/grubx64.efi /boot/efi/EFI/sles/grubx64.efi.bk"
-"# cp grubx64.efi.new /boot/efi/EFI/sles/grubx64.efi"
+For SUSE(SUSE Linux Enterprise Server, SLES):    
+"# zypper install grub2-efi-x64-modules"    
+download file create-grub-efi-SLES.sh from here, then:    
+"# chmod 777 create-grub-efi-SLES.sh"    
+"# ./create-grub-efi-SLES.sh"    
+"# mv /boot/efi/EFI/sles/grubx64.efi /boot/efi/EFI/sles/grubx64.efi.bk"    
+"# cp grubx64.efi.new /boot/efi/EFI/sles/grubx64.efi"    
 
 4. Reboot, and choose "tboot 1.9.x" from grub.
 
 5. Verify tboot works or not
-After system booting up, run command below as root to show tboot status:
+After system booting up, run command below as root to show tboot status:    
 "# txt-stat"
 
 tboot works fine if message below is there in txt-stat output:
-***********************************************************
+"***********************************************************
          TXT measured launch: TRUE
          secrets flag set: TRUE
-***********************************************************
+***********************************************************"
 
 tboot version could also be found:
-TBOOT: ******************* TBOOT *******************
+"TBOOT: ******************* TBOOT *******************
 TBOOT:    2018-08-30 18:00 +0800 1.9.7
-TBOOT: *********************************************
+TBOOT: *********************************************"
