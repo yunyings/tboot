@@ -21,22 +21,22 @@ Fedora: # dnf install tboot
 Ubuntu: # apt install tboot    
 SUSE: # zipper in tboot    
 
-2. Download SINIT.bin (ONLY needed for clients, NOT needed on server platforms)
-a) Find the right SINIT zip for your CPU: https://software.intel.com/en-us/articles/intel-trusted-execution-technology/
-b) Unzip it, and put the SINIT.bin to /boot
+2. Download SINIT.bin (ONLY needed for clients, NOT needed on server platforms)    
+a) Find the right SINIT zip for your CPU: https://software.intel.com/en-us/articles/intel-trusted-execution-technology/    
+b) Unzip it and put the SINIT.bin to /boot    
 
-3. Update grub
+3. Update grub    
 Way of updating grub is different depending on OS and its boot mode(legacy or EFI).
 
-Normally for legacy mode, updating grub is simple:
+Normally for legacy mode, updating grub is simple:    
 # grub2-mkconfig -o /boot/grub2/grub.cfg 
 
-Updating grub is more complicated under EFI mode. Below are examples of updating EFI grub for RHEL/Fedora/Ubuntu/SUSE.
+Updating grub is more complicated under EFI mode. Below are examples of updating EFI grub for RHEL/Fedora/Ubuntu/SUSE.    
 
-For Ubuntu: 
+For Ubuntu:     
 # grub2-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg 
 
-For RHEL:
+For RHEL:    
 # yum install grub2-efi-x64-modules
 download file create-grub-efi-RHEL.sh from here, then:
 # chmod 777 create-grub-efi-RHEL.sh
