@@ -1,7 +1,7 @@
 # tboot
 Trusted Boot (tboot) is an open source, pre- kernel/VMM module that uses Intel(R) Trusted Execution Technology (Intel(R) TXT) to perform a measured and verified launch of an OS kernel/VMM. 
 
-Upstream: <http://sourceforge.net/projects/tboot>
+Upstream: <http://sourceforge.net/projects/tboot>    
 Source code mercurial repo: <http://hg.code.sf.net/p/tboot/code>
 
 To use tboot on Intel TXT supported platforms, you need to:
