@@ -1,8 +1,8 @@
 # tboot
 Trusted Boot (tboot) is an open source, pre- kernel/VMM module that uses Intel(R) Trusted Execution Technology (Intel(R) TXT) to perform a measured and verified launch of an OS kernel/VMM. 
 
-Upstream: http://sourceforge.net/projects/tboot    
-Source code mercurial repo: http://hg.code.sf.net/p/tboot/code
+Upstream: <http://sourceforge.net/projects/tboot>
+Source code mercurial repo: <http://hg.code.sf.net/p/tboot/code>
 
 To use tboot on Intel TXT supported platforms, you need to:
 1. Install tboot
@@ -14,18 +14,18 @@ To use tboot on Intel TXT supported platforms, you need to:
 If no tboot package is available for installation, please try to build from source code by referring to wiki:
 https://sourceforge.net/p/tboot/wiki/Home/    
 
-1) Install tboot    
+## Install tboot    
 tboot can be installed through command line on RHEL/Fedora/Ubuntu/SUSE:    
 RHEL: # yum install tboot    
 Fedora: # dnf install tboot    
 Ubuntu: # apt install tboot    
 SUSE: # zipper in tboot    
 
-2. Download SINIT.bin (ONLY needed for clients, NOT needed on server platforms)    
+## Download SINIT.bin (ONLY needed for clients, NOT needed on server platforms)    
 a) Find the right SINIT zip for your CPU: https://software.intel.com/en-us/articles/intel-trusted-execution-technology/    
 b) Unzip it and put the SINIT.bin to /boot    
 
-3. Update grub    
+## Update grub    
 Way of updating grub is different depending on OS and its boot mode(legacy or EFI).
 
     Normally for legacy mode, updating grub is simple:    
@@ -60,9 +60,9 @@ Way of updating grub is different depending on OS and its boot mode(legacy or EF
     "# mv /boot/efi/EFI/sles/grubx64.efi /boot/efi/EFI/sles/grubx64.efi.bk"    
     "# cp grubx64.efi.new /boot/efi/EFI/sles/grubx64.efi"    
 
-4. Reboot, and choose "tboot 1.9.x" from grub.
+## Reboot, and choose "tboot 1.9.x" from grub.
 
-5. Verify tboot works or not    
+## Verify tboot works or not    
     After system booting up, run command below as root to show tboot status:    
     "# txt-stat"    
 
