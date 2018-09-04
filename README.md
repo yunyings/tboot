@@ -10,6 +10,7 @@ To use tboot on Intel TXT supported platforms, you need to:
 3. Update grub
 4. Reboot, choose booting through tboot
 5. Verify tboot works or not
+
 If no tboot package is available for installation, please try to build from source code by referring to wiki:
 https://sourceforge.net/p/tboot/wiki/Home/
 
