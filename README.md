@@ -28,10 +28,11 @@ b) Unzip it and put the SINIT.bin to /boot
 ## Update grub    
 Way of updating grub is different depending on OS and its boot mode(legacy or EFI).
 
-    Normally for legacy mode, updating grub is simple:    
-    "# grub2-mkconfig -o /boot/grub2/grub.cfg "
+* Under Legacy mode, updating grub is simple:    
+"# grub2-mkconfig -o /boot/grub2/grub.cfg "
 
-    Updating grub is more complicated under EFI mode. Below are examples of updating EFI grub for RHEL/Fedora/Ubuntu/SUSE.    
+* Under EFI mode, updating grub is more complicated. 
+Below are examples of updating EFI grub for RHEL/Fedora/Ubuntu/SUSE.    
 
     For Ubuntu:     
     "# grub2-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg"
