@@ -63,16 +63,16 @@ Way of updating grub is different depending on OS and its boot mode(legacy or EF
 4. Reboot, and choose "tboot 1.9.x" from grub.
 
 5. Verify tboot works or not    
-After system booting up, run command below as root to show tboot status:    
-"# txt-stat"    
-  
-tboot works fine if message below is there in txt-stat output:    
-"***********************************************************    
-         TXT measured launch: TRUE    
-         secrets flag set: TRUE    
-***********************************************************"    
-    
-tboot version could also be found:    
-"TBOOT: ******************* TBOOT *******************    
-TBOOT:    2018-08-30 18:00 +0800 1.9.7    
-TBOOT: *********************************************"    
+    After system booting up, run command below as root to show tboot status:    
+    "# txt-stat"    
+
+    tboot works fine if message below is there in txt-stat output:    
+    "***********************************************************    
+             TXT measured launch: TRUE    
+             secrets flag set: TRUE    
+    ***********************************************************"    
+
+    tboot version could also be found:    
+    "TBOOT: ******************* TBOOT *******************    
+    TBOOT:    2018-08-30 18:00 +0800 1.9.7    
+    TBOOT: *********************************************"    
