@@ -38,12 +38,12 @@ Below are examples of updating EFI grub for RHEL/Fedora/Ubuntu/SUSE.
     # grub2-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg    
   
     For RHEL:      
-    # yum install grub2-efi-x64-modules  
+    "# yum install grub2-efi-x64-modules"  
     download file create-grub-efi-RHEL.sh from here, then:    
-    # chmod 777 create-grub-efi-RHEL.sh  
-    # ./create-grub-efi-RHEL.sh    
-    # mv /boot/efi/EFI/redhat/grubx64.efi /boot/efi/EFI/redhat/grubx64.efi.bk    
-    # cp grubx64.efi.new /boot/efi/EFI/redhat/grubx64.efi   
+    "# chmod 777 create-grub-efi-RHEL.sh"  
+    "# ./create-grub-efi-RHEL.sh"    
+    "# mv /boot/efi/EFI/redhat/grubx64.efi /boot/efi/EFI/redhat/grubx64.efi.bk"    
+    "# cp grubx64.efi.new /boot/efi/EFI/redhat/grubx64.efi"   
 
     For Fedora:
     "# dnf install grub2-efi-x64-modules"    
