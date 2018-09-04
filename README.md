@@ -2,7 +2,7 @@
 Trusted Boot (tboot) is an open source, pre- kernel/VMM module that uses Intel(R) Trusted Execution Technology (Intel(R) TXT) to perform a measured and verified launch of an OS kernel/VMM. 
 
 Upstream: <http://sourceforge.net/projects/tboot>    
-Source code mercurial repo: <http://hg.code.sf.net/p/tboot/code>
+Source code mercurial repo: <http://hg.code.sf.net/p/tboot/code>    
 
 To use tboot on Intel TXT supported platforms, you need to:
 1. Install tboot
@@ -21,7 +21,7 @@ Fedora: # dnf install tboot
 Ubuntu: # apt install tboot    
 SUSE: # zipper in tboot    
 
-## 2. Download SINIT.bin (ONLY needed for clients, NOT needed on server platforms)    
+## 2. Download SINIT.bin (ONLY needed for clients)    
 a) Find the right SINIT zip for your CPU: https://software.intel.com/en-us/articles/intel-trusted-execution-technology/    
 b) Unzip it and put the SINIT.bin to /boot    
 
@@ -29,7 +29,7 @@ b) Unzip it and put the SINIT.bin to /boot
 Way of updating grub is different depending on OS and its boot mode(legacy or EFI).
 
 * Under Legacy mode, updating grub is simple:    
-	"# grub2-mkconfig -o /boot/grub2/grub.cfg"
+"# grub2-mkconfig -o /boot/grub2/grub.cfg"
 
 * Under EFI mode, updating grub is more complicated. 
 Below are examples of updating EFI grub for RHEL/Fedora/Ubuntu/SUSE.    
