@@ -28,37 +28,37 @@ b) Unzip it and put the SINIT.bin to /boot
 3. Update grub    
 Way of updating grub is different depending on OS and its boot mode(legacy or EFI).
 
-Normally for legacy mode, updating grub is simple:    
-"# grub2-mkconfig -o /boot/grub2/grub.cfg "
+    Normally for legacy mode, updating grub is simple:    
+    "# grub2-mkconfig -o /boot/grub2/grub.cfg "
 
-Updating grub is more complicated under EFI mode. Below are examples of updating EFI grub for RHEL/Fedora/Ubuntu/SUSE.    
+    Updating grub is more complicated under EFI mode. Below are examples of updating EFI grub for RHEL/Fedora/Ubuntu/SUSE.    
 
-For Ubuntu:     
-"# grub2-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg"
+    For Ubuntu:     
+    "# grub2-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg"
 
-For RHEL:    
-"# yum install grub2-efi-x64-modules"    
-download file create-grub-efi-RHEL.sh from here, then:    
-"# chmod 777 create-grub-efi-RHEL.sh"    
-"# ./create-grub-efi-RHEL.sh"    
-"# mv /boot/efi/EFI/redhat/grubx64.efi /boot/efi/EFI/redhat/grubx64.efi.bk"    
-"# cp grubx64.efi.new /boot/efi/EFI/redhat/grubx64.efi"    
+    For RHEL:    
+    "# yum install grub2-efi-x64-modules"    
+    download file create-grub-efi-RHEL.sh from here, then:    
+    "# chmod 777 create-grub-efi-RHEL.sh"    
+    "# ./create-grub-efi-RHEL.sh"    
+    "# mv /boot/efi/EFI/redhat/grubx64.efi /boot/efi/EFI/redhat/grubx64.efi.bk"    
+    "# cp grubx64.efi.new /boot/efi/EFI/redhat/grubx64.efi"    
 
-For Fedora:
-"# dnf install grub2-efi-x64-modules"    
-download file create-grub-efi-Fedora.sh from here, then:    
-"# chmod 777 create-grub-efi-Fedora.sh"    
-"# ./create-grub-efi-Fedora.sh"    
-"# mv /boot/efi/EFI/fedora/grubx64.efi /boot/efi/EFI/fedora/grubx64.efi.bk"    
-"# cp grubx64.efi.new /boot/efi/EFI/fedora/grubx64.efi"    
+    For Fedora:
+    "# dnf install grub2-efi-x64-modules"    
+    download file create-grub-efi-Fedora.sh from here, then:    
+    "# chmod 777 create-grub-efi-Fedora.sh"    
+    "# ./create-grub-efi-Fedora.sh"    
+    "# mv /boot/efi/EFI/fedora/grubx64.efi /boot/efi/EFI/fedora/grubx64.efi.bk"    
+    "# cp grubx64.efi.new /boot/efi/EFI/fedora/grubx64.efi"    
 
-For SUSE(SUSE Linux Enterprise Server, SLES):    
-"# zypper install grub2-efi-x64-modules"    
-download file create-grub-efi-SLES.sh from here, then:    
-"# chmod 777 create-grub-efi-SLES.sh"    
-"# ./create-grub-efi-SLES.sh"    
-"# mv /boot/efi/EFI/sles/grubx64.efi /boot/efi/EFI/sles/grubx64.efi.bk"    
-"# cp grubx64.efi.new /boot/efi/EFI/sles/grubx64.efi"    
+    For SUSE(SUSE Linux Enterprise Server, SLES):    
+    "# zypper install grub2-efi-x64-modules"    
+    download file create-grub-efi-SLES.sh from here, then:    
+    "# chmod 777 create-grub-efi-SLES.sh"    
+    "# ./create-grub-efi-SLES.sh"    
+    "# mv /boot/efi/EFI/sles/grubx64.efi /boot/efi/EFI/sles/grubx64.efi.bk"    
+    "# cp grubx64.efi.new /boot/efi/EFI/sles/grubx64.efi"    
 
 4. Reboot, and choose "tboot 1.9.x" from grub.
 
