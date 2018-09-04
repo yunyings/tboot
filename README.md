@@ -11,15 +11,15 @@ To use tboot on Intel TXT supported platforms, you need to:
 4. Reboot, choose booting through tboot
 5. Verify tboot works or not
 
-If no tboot package is available for installation, please try to build from source code by referring to wiki:
-https://sourceforge.net/p/tboot/wiki/Home/    
-
 ## 1. Install tboot    
 tboot can be installed through command line on RHEL/Fedora/Ubuntu/SUSE:    
 RHEL: # yum install tboot    
 Fedora: # dnf install tboot    
 Ubuntu: # apt install tboot    
 SUSE: # zipper in tboot    
+
+If no tboot package is available for installation, please try to build from source code by referring to wiki:
+https://sourceforge.net/p/tboot/wiki/Home/    
 
 ## 2. Download SINIT.bin (ONLY needed for clients)    
 a) Find the right SINIT zip for your CPU: https://software.intel.com/en-us/articles/intel-trusted-execution-technology/    
